@@ -1,0 +1,35 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  font-family: Satoshi;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  /*background-color: transparent;*/
+  border: 0;
+  cursor: pointer;
+}
+
+html {
+  font-size: 62.5%;
+  background-color: var(--white);
+  color: var(--gray-100);
+  overflow-x: hidden;
+  font-family: Satoshi;
+}

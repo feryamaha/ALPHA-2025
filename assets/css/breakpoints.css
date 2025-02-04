@@ -1,0 +1,155 @@
+@media screen and (max-width: 1920px) {
+  .s-hero-home {
+    background-size: 90%;
+  }
+
+  .s-hero-mission {
+    background-size: 119.5%;
+  }
+
+  .s-hero-mission .container {
+    padding-top: 20px;
+  }
+
+  .wrapper-text-info {
+    width: 70%;
+    max-width: 100%;
+  }
+
+  .box-content-info {
+    left: 520px;
+  }
+
+  .s-hero-faq .container {
+    padding-top: 60px;
+  }
+}
+
+@media screen and (max-width: 1792px) {
+  .s-hero-mission .container {
+    padding-top: 60px;
+  }
+  .s-hero-mission {
+    background-size: 115.55%;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .s-hero-mission .container {
+    padding-top: 108px;
+  }
+  .s-hero-mission {
+    background-size: 108%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .s-hero-mission .container {
+    padding-top: 108px;
+  }
+  .s-hero-mission {
+    background-size: 92%;
+  }
+
+  .wrapper-text-info {
+    width: 60%;
+  }
+
+  .box-content-info {
+    left: 420px;
+  }
+
+  .s-hero-services .container {
+    background-position: left top;
+    padding-right: 105px;
+  }
+
+  .s-hero-services .wrapper-text-info {
+    padding-left: 30px;
+  }
+
+  .feature-description {
+    padding: 38.5px 0px 0px 0px;
+  }
+
+  .s-hero-about {
+    background-size: 100%;
+    background-position: 90%;
+  }
+
+  .wrapper-text-info {
+    width: 55%;
+  }
+
+  .s-hero-faq .container {
+    padding-top: 0;
+  }
+
+  .wrapper-faq h5 {
+    font-size: 14px;
+  }
+
+  .row-questions {
+    width: 100%;
+    padding: 1%;
+  }
+
+  .row-questions p {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .box-content-info {
+    left: 380px;
+  }
+
+  .wrapper-segmented {
+    right: 80px;
+  }
+
+  .content-text-Otdr {
+    top: 6.3rem;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .menu-square {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .s-hero-suporte,
+  nav ul,
+  #bt-primary {
+    display: none;
+  }
+
+  .s-hero-home {
+    background-size: cover;
+    background-position: left top;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (max-width: 991px) {
+}
+
+@media screen and (max-width: 834px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 560px) {
+}
+
+@media screen and (max-width: 480px) {
+}
+
+@media screen and (max-width: 375px) {
+}
+
+@media screen and (max-width: 320px) {
+}
