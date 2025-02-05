@@ -1,79 +1,89 @@
 a {
   color: var(--Neutrals-900, #17181a);
-  font-family: Satoshi;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
+  font: 400 14px/150% Satoshi;
 }
 h1 {
   color: #fff;
-  font-family: Satoshi;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 120%;
+  font: 700 48px/120% Satoshi;
 }
 h1 span {
   color: var(--Vermelho-200, #e6808c);
-  font-family: Satoshi;
-  font-size: 56px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 120%;
+  font: 900 56px/120% Satoshi;
 }
-
 h2 {
   color: var(--Neutrals-900, #17181a);
-  font-family: Satoshi;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 120%;
+  font: 700 40px/120% Satoshi;
 }
-
 h3 {
   color: var(--Neutrals-900, #17181a);
-  font-family: Satoshi;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 130%;
+  font: 700 32px/130% Satoshi;
   letter-spacing: -0.32px;
 }
-
 h5 {
   color: var(--Neutrals-900, #17181a);
-  font-family: Satoshi;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 140%;
+  font: 700 24px/140% Satoshi;
 }
-
 p {
   color: rgba(255, 255, 255, 0.8);
-  font-family: Satoshi;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
+  font: 400 18px/150% Satoshi;
 }
 
+/* button geral */
 button {
   display: flex;
   height: 32px;
-  padding: 0px 24px;
+  padding: 0 24px;
   justify-content: center;
   align-items: center;
   gap: 10px;
   border-radius: 2px;
   background: var(--vermelho-500);
-
   color: var(--white);
-  font-family: Satoshi;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 140%;
+  font: 700 18px/140% Satoshi;
+  transition: transform 0.3s ease;
+}
+
+/* button orçamento */
+.button-solution {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  background: none;
+}
+#btn-solutions {
+  padding: 0;
+  background-color: transparent;
+  color: var(--vermelho-500);
+}
+
+/* ANIMAÇÕES */
+button,
+.nav-menu a,
+.suporte-text a,
+.button-solution,
+.button-solution img,
+.social-footer img,
+#logo-alpha,
+.credits {
+  cursor: pointer;
+  transition: transform 0.7s ease, opacity 0.7s ease;
+}
+#bt-primary:hover,
+#bt-secondary:hover,
+.button-solution:hover,
+#logo-alpha:hover,
+.credits:hover {
+  transform: translateY(-2px);
+}
+.button-solution:hover img,
+.social-footer img:hover {
+  transform: translateX(3px);
+}
+nav ul li a:hover,
+.suporte-text a:hover,
+.social-footer img:hover,
+#logo-alpha:hover,
+.credits:hover {
+  opacity: 0.5;
 }
