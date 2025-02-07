@@ -1,27 +1,30 @@
 :root {
-  /* Existente */
+  /* Font sizes for mobile */
   --font-size-mobile-34: 3.4rem;
   --font-size-mobile-32: 3.2rem;
+  --font-size-mobile-28: 2.8rem;
   --font-size-mobile-24: 2.4rem;
   --font-size-mobile-20: 2rem;
   --font-size-mobile-18: 1.8rem;
   --font-size-mobile-16: 1.6rem;
   --font-size-mobile-14: 1.4rem;
-
+  /* Hero section heights */
   --height-s-hero-home-834: 102.4rem;
   --height-s-hero-home-768: 86.8rem;
   --height-s-hero-home-mobile: 81.2rem;
   --height-s-hero-mission-mobile: 104rem;
-
+  /* Hero section paddings */
   --padding-s-hero-mission-mobile: 40rem 3.2rem 6rem;
   --padding-top-s-hero-mission-480: 36rem;
   --padding-s-hero-mission-large: 8rem;
-
+  --padding-s-hero-service-mobile-560: 13rem 3.2rem 3.2rem;
+  --padding-s-hero-service-mobile-480: 10rem 1.6rem 1.6rem;
+  /* Background images */
   --bg-s-home-mobile: url(../imgs/bg-s-home-mobile.webp);
   --bg-s-mission-mobile: url(../imgs/bg-s-mission-mobile.webp);
   --bg-s-home-768: url(../imgs/bg-s-home-768.webp);
   --bg-s-home-834: url(../imgs/bg-s-home-834.webp);
-
+  /* Other dimensions */
   --background-size-mission-834: 95%;
   --top-box-machine-1280: 28rem;
   --left-box-content-info-1280: 44.05rem;
@@ -40,6 +43,7 @@
   }
   /* -- s-hero-services -- */
 }
+
 @media screen and (min-width: 1200px) and (max-width: 1280px) {
   /* -- s-hero-mission -- */
   .box-machine {
@@ -54,7 +58,11 @@
     width: 100%;
   }
   /* -- s-hero-services -- */
+  .feature-description {
+    padding-top: 6.2rem;
+  }
 }
+
 @media screen and (min-width: 1025px) and (max-width: 1199px) {
   /* -- s-hero-mission -- */
   .box-machine {
@@ -67,7 +75,12 @@
     background-position-x: -4rem;
   }
   /* -- s-hero-services -- */
+
+  .feature-description {
+    padding-top: 6.2rem;
+  }
 }
+
 @media screen and (max-width: 1024px) {
   /* -- s-hero-suporte & Header -- */
   .s-hero-suporte,
@@ -102,7 +115,16 @@
     position: static;
   }
   /* -- s-hero-services -- */
+  .wrapper-text-info h2,
+  .wrapper-text-info h2 span {
+    font-size: var(--font-size-mobile-32);
+  }
+
+  .feature-description {
+    padding-top: 10.5rem;
+  }
 }
+
 @media screen and (max-width: 834px) {
   /* -- s-hero-home -- */
   .s-hero-home {
@@ -124,7 +146,11 @@
     padding-top: 39rem;
   }
   /* -- s-hero-services -- */
+  .feature-description {
+    padding-top: 6rem;
+  }
 }
+
 @media screen and (max-width: 768px) {
   /* -- s-hero-home -- */
   .s-hero-home {
@@ -133,7 +159,11 @@
     background-size: cover;
   }
   /* -- s-hero-services -- */
+  .s-hero-services .container {
+    background: none;
+  }
 }
+
 @media screen and (max-width: 560px) {
   /* -- s-hero-home -- */
   .s-hero-home {
@@ -145,8 +175,13 @@
     min-height: 100%;
   }
   h1,
-  #h1-span {
+  h1 span {
     font-size: var(--font-size-mobile-32);
+    font-weight: bold;
+  }
+  h1 span {
+    font-size: var(--font-size-mobile-34);
+    color: #fff;
   }
   .s-hero-home p {
     font-size: var(--font-size-mobile-16);
@@ -177,7 +212,30 @@
     font-size: var(--font-size-mobile-16);
   }
   /* -- s-hero-services -- */
+  .s-hero-services .container {
+    height: 100%;
+    padding: var(--padding-s-hero-service-mobile-560);
+  }
+  .feature-description {
+    width: 100%;
+    padding-top: 20rem;
+  }
+  .position-middle {
+    width: 100%;
+    padding: 8.85rem 0 11.85rem;
+  }
+  #slider-vertical {
+    top: 22rem;
+    left: 3.2rem;
+  }
+  .info-block,
+  .info-block h5,
+  .info-block p {
+    width: 100%;
+    font-size: var(--font-size-mobile-24);
+  }
 }
+
 @media screen and (max-width: 480px) {
   .s-hero-mission .container {
     padding-top: var(--padding-top-s-hero-mission-480);
@@ -189,4 +247,21 @@
     white-space: normal;
   }
   /* -- s-hero-services -- */
+  .s-hero-services .container {
+    padding: var(--padding-s-hero-service-mobile-480);
+  }
+  .feature-description {
+    width: 100%;
+    padding-top: 14rem;
+  }
+  #slider-vertical {
+    left: 0.8rem;
+  }
+  .wrapper-text-info h2,
+  .wrapper-text-info h2 span {
+    font-size: var(--font-size-mobile-28);
+  }
+  .info-block p {
+    font-size: var(--font-size-mobile-20);
+  }
 }

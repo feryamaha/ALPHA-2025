@@ -125,8 +125,21 @@ nav ul {
   height: 1096px;
 }
 .s-hero-services .container {
-  padding: 110px 205px 80px 80px;
+  position: relative;
+  /*   padding: 110px 205px 80px 80px; */
+  padding: 8rem;
   background: url(../imgs/bg-s-service.webp) center/cover no-repeat;
+}
+
+#vetor-sinous-services {
+  position: absolute;
+  top: 0;
+}
+
+#slider-vertical {
+  position: absolute;
+  top: 0;
+  left: 60px;
 }
 .s-hero-services .wrapper-text-info {
   width: 1155px;
@@ -137,7 +150,7 @@ nav ul {
 }
 .feature-description {
   width: 430px;
-  padding: 91.5px 0 0 33px;
+  padding: 120px 0 0 33px;
 }
 .info-block h5 {
   padding-bottom: 8px;
