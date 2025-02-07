@@ -1,276 +1,192 @@
-@media screen and (max-width: 1920px) {
-  .s-hero-home {
-    background-size: 90%;
-  }
+:root {
+  /* Existente */
+  --font-size-mobile-34: 3.4rem;
+  --font-size-mobile-32: 3.2rem;
+  --font-size-mobile-24: 2.4rem;
+  --font-size-mobile-20: 2rem;
+  --font-size-mobile-18: 1.8rem;
+  --font-size-mobile-16: 1.6rem;
+  --font-size-mobile-14: 1.4rem;
 
-  .s-hero-mission {
-    background-size: 119.5%;
-  }
+  --height-s-hero-home-834: 102.4rem;
+  --height-s-hero-home-768: 86.8rem;
+  --height-s-hero-home-mobile: 81.2rem;
+  --height-s-hero-mission-mobile: 104rem;
 
+  --padding-s-hero-mission-mobile: 40rem 3.2rem 6rem;
+  --padding-top-s-hero-mission-480: 36rem;
+  --padding-s-hero-mission-large: 8rem;
+
+  --bg-s-home-mobile: url(../imgs/bg-s-home-mobile.webp);
+  --bg-s-mission-mobile: url(../imgs/bg-s-mission-mobile.webp);
+  --bg-s-home-768: url(../imgs/bg-s-home-768.webp);
+  --bg-s-home-834: url(../imgs/bg-s-home-834.webp);
+
+  --background-size-mission-834: 95%;
+  --top-box-machine-1280: 28rem;
+  --left-box-content-info-1280: 44.05rem;
+  --left-box-content-info-1199: 35.25rem;
+}
+@media screen and (min-width: 1441px) and (max-width: 1920px) {
+  /* -- s-hero-home -- */
+  .wrapper-text-home {
+    display: inline-flex;
+    justify-content: center;
+    width: 55%;
+  }
+  /* -- s-hero-mission -- */
   .s-hero-mission .container {
-    padding-top: 20px;
+    padding: var(--padding-s-hero-mission-large);
   }
-
-  .wrapper-text-info {
-    width: 70%;
-    max-width: 100%;
-  }
-
-  .box-content-info {
-    left: 520px;
-  }
-
-  .s-hero-faq .container {
-    padding-top: 60px;
-  }
+  /* -- s-hero-services -- */
 }
-
-@media screen and (max-width: 1600px) {
-  .s-hero-mission .container {
-    padding-top: 108px;
-  }
-  .s-hero-mission {
-    background-size: 108%;
-  }
-
-  .wrapper-text-info {
-    width: 60%;
-  }
-}
-
-@media screen and (max-width: 1440px) {
-  .s-hero-mission {
-    background-size: 100%;
-  }
-}
-
-@media screen and (max-width: 1280px) {
-}
-
-@media screen and (max-width: 1200px) {
-  .s-hero-home {
-    background-size: 100%;
-  }
-
+@media screen and (min-width: 1200px) and (max-width: 1280px) {
+  /* -- s-hero-mission -- */
   .box-machine {
-    top: 25rem;
-    width: 30%;
+    width: 34.4rem;
+    height: 48.8rem;
+    top: var(--top-box-machine-1280);
   }
-
   .box-content-info {
-    top: 650px;
-    left: 420px;
+    left: var(--left-box-content-info-1280);
   }
-}
-
-@media screen and (min-width: 1025px) {
-  .menu-square {
-    display: none;
+  .wrapper-text-info {
+    width: 100%;
   }
+  /* -- s-hero-services -- */
 }
-
+@media screen and (min-width: 1025px) and (max-width: 1199px) {
+  /* -- s-hero-mission -- */
+  .box-machine {
+    width: 32.4rem;
+  }
+  .box-content-info {
+    left: var(--left-box-content-info-1199);
+  }
+  .s-hero-mission {
+    background-position-x: -4rem;
+  }
+  /* -- s-hero-services -- */
+}
 @media screen and (max-width: 1024px) {
+  /* -- s-hero-suporte & Header -- */
   .s-hero-suporte,
   #menu-header,
   #bt-primary {
     display: none;
   }
+  /* -- s-hero-home -- */
   .s-hero-home {
-    background-image: url(../imgs/bg-s-home-1024.webp);
-    background-size: 100%;
+    min-height: 100%;
+    background: url(../imgs/bg-s-home-1024.webp) center / cover no-repeat;
   }
-
-  .wrapper-text-info {
-    width: 100%;
-  }
-
-  .box-machine {
-    top: 25rem;
-    width: 32.5%;
-  }
-
-  .box-content-info {
-    left: 340px;
-  }
-}
-
-@media screen and (max-width: 991px) {
-}
-
-@media screen and (max-width: 834px) {
+  /* -- s-hero-mission -- */
   .box-machine {
     display: none;
   }
-
   .s-hero-mission {
-    height: 965px;
+    height: 100vh;
     background-image: url(../imgs/bg-s-mission-834.webp);
-    background-size: 100%;
-    background-position: center;
+    background-size: cover;
+    background-position: top;
   }
-
   .s-hero-mission .container {
+    height: 100%;
+    padding-top: 45rem;
     display: flex;
     flex-direction: column;
-    padding: 340px 80px 48px;
     justify-content: space-between;
+    align-items: flex-start;
   }
-  .box-machine {
-    top: 35rem;
-    width: 30%;
-  }
-
   .box-content-info {
     position: static;
-    left: 292.5px;
   }
+  /* -- s-hero-services -- */
 }
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 834px) {
+  /* -- s-hero-home -- */
   .s-hero-home {
-    height: 924px;
-    background-image: url(../imgs/bg-s-home-768.webp);
-    background-size: 100%;
+    height: var(--height-s-hero-home-834);
+    background-image: var(--bg-s-home-834);
   }
-
-  .s-hero-home .container {
-    height: 100%;
-    padding: 64px 16px 23px;
-    justify-content: space-between;
-  }
-
   .wrapper-text-home {
     width: 100%;
-    text-align: justify;
   }
-
-  .wrapper-text-home p {
-    width: 78%;
-  }
-
-  #bt-secondary,
-  .wrapper-text-home p {
+  #wrapper-bt-secondary {
+    width: 80%;
     margin: 0 auto;
   }
-
+  /* -- s-hero-mission -- */
   .s-hero-mission {
-    background-position: top;
+    background-size: var(--background-size-mission-834);
   }
+  .s-hero-mission .container {
+    padding-top: 39rem;
+  }
+  /* -- s-hero-services -- */
 }
-
+@media screen and (max-width: 768px) {
+  /* -- s-hero-home -- */
+  .s-hero-home {
+    height: var(--height-s-hero-home-768);
+    background-image: var(--bg-s-home-768);
+    background-size: cover;
+  }
+  /* -- s-hero-services -- */
+}
 @media screen and (max-width: 560px) {
+  /* -- s-hero-home -- */
   .s-hero-home {
-    height: 824px;
-    background-size: 100%;
-    background-position: bottom;
+    overflow: hidden;
+    height: var(--height-s-hero-home-mobile);
+    background-image: var(--bg-s-home-mobile);
   }
-
   .s-hero-home .container {
-    padding: 20px;
+    min-height: 100%;
   }
-
-  .wrapper-text-home {
-    text-align: left;
+  h1,
+  #h1-span {
+    font-size: var(--font-size-mobile-32);
   }
-
-  .wrapper-text-home p {
-    width: 100%;
-    text-align: center;
+  .s-hero-home p {
+    font-size: var(--font-size-mobile-16);
   }
-
-  #bt-secondary {
+  #wrapper-bt-secondary {
     width: 100%;
   }
-
-  .s-hero-mission {
-    background-image: url(../imgs/bg-s-mission-mobile.webp);
-    background-position: top;
-  }
-
-  .s-hero-mission .container {
-    padding: 360px 16px 48px;
-  }
-  .wrapper-text-info h2 {
-    font-size: 3.2rem;
-  }
-
-  .wrapper-text-info p {
-    width: 100%;
-    text-align: justify;
-  }
-  .text-description p {
-    width: 100%;
-  }
-
-  .box-content-info {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .s-hero-home {
-    height: 824px;
-    background-size: 150%;
-    background-position: center;
-  }
-
-  .s-hero-mission .container {
-    padding-top: 320px;
-  }
-  .wrapper-text-home h1,
-  .wrapper-text-home span {
-    font-size: 4rem;
-  }
-
-  .wrapper-text-info h2 {
-    font-size: 2.8rem;
-  }
-
   .wrapper-branding p {
     white-space: normal;
-    max-width: 100%;
-    text-align: center;
   }
-}
-
-@media screen and (max-width: 375px) {
-  .wrapper-text-home {
-    text-align: center;
+  /* -- s-hero-mission -- */
+  .s-hero-mission {
+    height: var(--height-s-hero-mission-mobile);
+    background-image: var(--bg-s-mission-mobile);
   }
-
-  .wrapper-text-home h1,
-  .wrapper-text-home span {
-    font-size: 3.2rem;
-  }
-
-  .s-hero-home {
-    height: 824px;
-    background-size: 190%;
-    background-position: center;
-  }
-
-  .wrapper-branding p {
-    font-size: 14px;
-  }
-
   .s-hero-mission .container {
-    padding-top: 260px;
+    padding: var(--padding-s-hero-mission-mobile);
   }
-
+  h2 {
+    font-size: var(--font-size-mobile-32);
+  }
   .wrapper-text-info p {
-    font-size: 16px;
+    font-size: var(--font-size-mobile-16);
   }
+  #wrapper-bt-secondary,
+  #btn-solutions-mission,
+  #btn-solutions-about {
+    font-size: var(--font-size-mobile-16);
+  }
+  /* -- s-hero-services -- */
 }
-
-@media screen and (max-width: 320px) {
-  .wrapper-text-home h1,
-  .wrapper-text-home span {
-    font-size: 2.8rem;
+@media screen and (max-width: 480px) {
+  .s-hero-mission .container {
+    padding-top: var(--padding-top-s-hero-mission-480);
   }
-
-  .wrapper-text-home p {
-    font-size: 14px;
+  .wrapper-text-home p,
+  .wrapper-text-info p {
+    width: 100%;
+    max-width: 100%;
+    white-space: normal;
   }
+  /* -- s-hero-services -- */
 }

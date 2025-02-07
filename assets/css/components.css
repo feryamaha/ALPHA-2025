@@ -1,3 +1,4 @@
+/* -- Estilização de Fontes -- */
 a {
   color: var(--Neutrals-900, #17181a);
   font: 400 14px/150% Satoshi;
@@ -24,11 +25,11 @@ h5 {
   font: 700 24px/140% Satoshi;
 }
 p {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgb(255 255 255 / 0.8);
   font: 400 18px/150% Satoshi;
 }
 
-/* button geral */
+/* -- Buttons Actions -- */
 button {
   display: flex;
   height: 32px;
@@ -42,42 +43,99 @@ button {
   font: 700 18px/140% Satoshi;
   transition: transform 0.3s ease;
 }
-
-/* button orçamento */
-.button-solution {
+#wrapper-bt-secondary {
+  width: 240px;
+  height: 52px;
+  padding: 0.6rem;
+  border-radius: 4px;
+  border: 1px solid #161d28;
+  background: var(--Azul-800, #020a18);
+}
+#bt-secondary {
+  width: 100%;
+  height: 100%;
+}
+/* -- Buttons Solutions -- */
+.button-solution-mission,
+.button-solution-about {
   display: inline-flex;
   align-items: center;
   gap: 8px;
   border: none;
   background: none;
 }
-#btn-solutions {
+#btn-solutions-mission,
+#btn-solutions-about {
   padding: 0;
-  background-color: transparent;
+  background-color: #fff0;
   color: var(--vermelho-500);
 }
-
-/* ANIMAÇÕES */
+/* -- Button Groups -- */
+.button-group {
+  position: relative;
+  width: 320px;
+  padding: 4px;
+  border-radius: 100px;
+  border: 1px solid var(--neutral-400);
+  background: var(--Neutrals-50, #fafafa);
+}
+.box-button-maintenance {
+  padding: 6px 16px;
+  border-radius: 100px;
+  border: 1px solid var(--Vermelho-50, #f5ccd1);
+  background: #cd001a;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.08);
+}
+.box-button-rental {
+  border-radius: 100px;
+}
+#btn-maintenance,
+#btn-rent {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 140%;
+  cursor: pointer;
+}
+#btn-maintenance {
+  position: relative;
+  color: var(--white);
+}
+#btn-rent {
+  background-color: #fff0;
+  color: var(--neutral-500);
+}
+/* -- Hover Effects -- */
 button,
 .nav-menu a,
 .suporte-text a,
-.button-solution,
-.button-solution img,
+.button-solution-mission,
+.button-solution-mission img,
+.button-solution-about,
+.button-solution-about img,
 .social-footer img,
 #logo-alpha,
-.credits {
+.credits,
+#wrapper-bt-secondary,
+.row-questions,
+.row-questions img {
   cursor: pointer;
   transition: transform 0.7s ease, opacity 0.7s ease;
 }
 #bt-primary:hover,
-#bt-secondary:hover,
-.button-solution:hover,
+#wrapper-bt-secondary:hover,
+.button-solution-mission:hover,
+.button-solution-about:hover,
 #logo-alpha:hover,
-.credits:hover {
+.credits:hover,
+.row-questions,
+.row-questions img {
   transform: translateY(-2px);
 }
-.button-solution:hover img,
-.social-footer img:hover {
+.button-solution-mission:hover img,
+.button-solution-about:hover img,
+.social-footer img:hover,
+.row-questions:hover,
+.row-questions img:hover {
   transform: translateX(3px);
 }
 nav ul li a:hover,
@@ -86,4 +144,135 @@ nav ul li a:hover,
 #logo-alpha:hover,
 .credits:hover {
   opacity: 0.5;
+}
+/* -- Layout: Width 100% -- */
+.s-hero-suporte .container,
+header,
+header .container,
+.s-hero-home,
+.s-hero-home .container,
+.s-hero-mission,
+.text-description,
+.s-hero-services,
+.s-hero-services .container,
+.position-middle p,
+.s-hero-about,
+.s-hero-about .container,
+.s-hero-faq,
+.s-hero-faq .container,
+.wrapper-image-otdr,
+footer,
+footer .container,
+.wrapper-footer {
+  width: 100%;
+}
+/* -- Layout: Height Auto -- */
+.wrapper-suporte .suporte-content,
+.s-hero-home,
+.s-hero-home .container,
+.branding-content,
+.branding img,
+.wrapper-segmented {
+  height: auto;
+}
+/* -- Layout: Height 100% -- */
+.s-hero-mission .container,
+.s-hero-services .container,
+.s-hero-about .container,
+.s-hero-faq .container,
+footer .container {
+  height: 100%;
+}
+
+/* -- Flexbox: Display Flex -- */
+.wrapper-suporte .suporte-content,
+.wrapper-suporte,
+header,
+header .container,
+nav ul,
+.s-hero-home .container,
+.branding-content,
+.feature-description,
+.button-group,
+.box-button-maintenance,
+.box-button-rental,
+.wrapper-service-list,
+.qualified-pros,
+.tech-lab,
+.multi-brand,
+.s-hero-faq .container,
+.suport-faq,
+.wrapper-faq,
+.wrapper-content-suport,
+.wrapper-questions,
+.row-questions,
+footer .container,
+.wrapper-footer,
+.box-logo-footer,
+.social-footer {
+  display: flex;
+}
+
+/* -- Flexbox: Align-items Center -- */
+.wrapper-suporte .suporte-content,
+.wrapper-suporte,
+header,
+header .container,
+nav ul,
+.branding-content,
+.button-group,
+.box-button-maintenance,
+.box-button-rental,
+.qualified-pros,
+.tech-lab,
+.multi-brand,
+.row-questions {
+  align-items: center;
+}
+
+/* -- Flexbox: Align-items Flex-start -- */
+.s-hero-home .container,
+.wrapper-text-home,
+.wrapper-branding,
+.wrapper-service-list {
+  align-items: flex-start;
+}
+
+/* -- Flexbox: Flex-direction Column -- */
+.s-hero-home .container,
+.wrapper-text-home,
+.wrapper-branding,
+.feature-description,
+.wrapper-service-list,
+.s-hero-faq .container,
+.wrapper-content-suport,
+.wrapper-questions,
+footer .container,
+.box-logo-footer {
+  flex-direction: column;
+}
+
+/* -- Flexbox: Justify-content Space-between -- */
+header,
+header .container,
+.s-hero-home,
+.button-group,
+.s-hero-faq .container,
+.wrapper-faq,
+.wrapper-content-suport,
+.wrapper-questions,
+.row-questions,
+footer .container,
+.wrapper-footer,
+.box-logo-footer,
+.social-footer {
+  justify-content: space-between;
+}
+
+/* .s-hero-mission, */
+.s-hero-services,
+.s-hero-about,
+.s-hero-faq,
+footer {
+  display: none;
 }
