@@ -87,6 +87,7 @@ nav ul {
   width: 657px;
   max-width: 100%;
 }
+
 .wrapper-text-info h2,
 .wrapper-text-info p {
   color: var(--Neutrals-700);
@@ -121,12 +122,9 @@ nav ul {
   border-radius: 3.2rem;
 }
 /* -- s-hero-services -- */
-.s-hero-services {
-  height: 1096px;
-}
 .s-hero-services .container {
   position: relative;
-  /*   padding: 110px 205px 80px 80px; */
+  padding: 110px 205px 80px 80px;
   padding: 8rem;
   background: url(../imgs/bg-s-service.webp) center/cover no-repeat;
 }
@@ -138,16 +136,17 @@ nav ul {
 
 #slider-vertical {
   position: absolute;
-  top: 0;
   left: 60px;
 }
 .s-hero-services .wrapper-text-info {
   width: 1155px;
+  max-width: 100%;
   padding-left: 20px;
 }
 .wrapper-text-info h2 span {
   color: var(--vermelho-500);
 }
+
 .feature-description {
   width: 430px;
   padding: 120px 0 0 33px;
