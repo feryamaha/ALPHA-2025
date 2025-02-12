@@ -146,10 +146,10 @@ nav ul {
 .wrapper-text-info h2 span {
   color: var(--vermelho-500);
 }
-
+/* red blue green */
 .feature-description {
   width: 430px;
-  padding: 120px 0 0 33px;
+  padding: 190px 0 0 33px;
 }
 .info-block h5 {
   padding-bottom: 8px;
@@ -165,9 +165,10 @@ nav ul {
 .position-top {
   width: 429px;
 }
+/* red blue green */
 .position-middle {
   width: 360px;
-  padding: 62.5px 0 108.5px;
+  padding: 72.5px 0 108.5px;
 }
 /* -- s-hero-about -- */
 .s-hero-about {
