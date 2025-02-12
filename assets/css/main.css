@@ -298,11 +298,12 @@ footer {
 footer .container {
   padding: 43px 80px 12px;
   text-align: center;
+  align-items: center;
 }
+
 .box-logo-footer {
   height: 7.4rem;
   width: 10.2rem;
-  margin: 0 auto;
 }
 .social-footer {
   width: 58px;
