@@ -146,7 +146,7 @@ nav ul {
 .wrapper-text-info h2 span {
   color: var(--vermelho-500);
 }
-/* red blue green */
+
 .feature-description {
   width: 430px;
   padding: 190px 0 0 33px;
@@ -165,11 +165,12 @@ nav ul {
 .position-top {
   width: 429px;
 }
-/* red blue green */
+
 .position-middle {
   width: 360px;
   padding: 72.5px 0 108.5px;
 }
+
 /* -- s-hero-about -- */
 .s-hero-about {
   height: 864px;
@@ -228,10 +229,9 @@ nav ul {
   font-weight: 500;
   color: var(--neutral-700);
 }
+
 /* -- s-hero-faq -- */
-.s-hero-faq {
-  height: 800px;
-}
+
 .s-hero-faq .container {
   padding: 0 80px 120px;
   gap: 13rem;
@@ -239,8 +239,14 @@ nav ul {
 .wrapper-image-otdr {
   position: relative;
   height: 262px;
+  min-height: max-content;
+  background-image: url(../imgs/image-OTDR.webp);
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
+
 .content-text-Otdr {
+  padding-top: 0;
   position: absolute;
   width: 550px;
   left: 6.4rem;
@@ -295,6 +301,8 @@ footer .container {
 }
 .box-logo-footer {
   height: 7.4rem;
+  width: 10.2rem;
+  margin: 0 auto;
 }
 .social-footer {
   width: 58px;

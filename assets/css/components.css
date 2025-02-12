@@ -269,9 +269,10 @@ footer .container,
   justify-content: space-between;
 }
 
-/* .s-hero-mission, .s-hero-services, */
+/* .s-hero-mission,
+.s-hero-services,
 .s-hero-about,
 .s-hero-faq,
 footer {
   display: none;
-}
+} */

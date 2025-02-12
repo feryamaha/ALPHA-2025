@@ -42,7 +42,11 @@
   .s-hero-mission .container {
     padding: var(--padding-s-hero-mission-large);
   }
-  /* -- s-hero-services -- */
+  /* -- s-hero-about -- */
+  .s-hero-about {
+    background-size: 80%;
+  }
+  /* -- s-hero-faq -- */
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1280px) {
@@ -58,7 +62,10 @@
   .wrapper-text-info {
     width: 100%;
   }
-  /* -- s-hero-services -- */
+  /* -- s-hero-faq -- */
+  .row-questions {
+    width: 90%;
+  }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1199px) {
@@ -76,6 +83,14 @@
 
   .feature-description {
     padding-top: 13rem;
+  }
+  /* -- s-hero-about -- */
+  .wrapper-segmented {
+    right: 2rem;
+  }
+  /* -- s-hero-faq -- */
+  .row-questions {
+    width: 90%;
   }
 }
 
@@ -103,7 +118,7 @@
   }
   .s-hero-mission .container {
     height: 100%;
-    padding-top: 45rem;
+    padding-top: 55rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -120,6 +135,26 @@
 
   .feature-description {
     padding-top: 22rem;
+  }
+  /* -- s-hero-about -- */
+  .s-hero-about {
+    background-size: 120%;
+    background-position-x: -12rem;
+  }
+  .wrapper-segmented {
+    right: 1rem;
+    bottom: 18rem;
+  }
+  /* -- s-hero-faq -- */
+
+  .wrapper-questions {
+    margin-left: 0.8rem;
+  }
+  .row-questions {
+    width: 90%;
+  }
+  .content-text-Otdr {
+    top: 4.3rem;
   }
 }
 
@@ -148,6 +183,56 @@
   .feature-description {
     padding-top: 18rem;
   }
+  /* -- s-hero-about -- */
+  .wrapper-segmented {
+    right: 5rem;
+    width: 50%;
+  }
+  /* -- s-hero-faq -- */
+  .s-hero-faq {
+    min-height: max-content;
+  }
+  .wrapper-content-suport {
+    gap: 4.4rem;
+  }
+  .wrapper-faq {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .wrapper-image-otdr {
+    height: 738px;
+    background-image: url(../imgs/image-OTDR-mobile.webp);
+    background-size: 100%;
+  }
+
+  .content-text-Otdr {
+    width: 80%;
+    top: 12.5rem;
+  }
+  /* -- Footer -- */
+  footer {
+    height: 699px;
+    background: var(--black) url(../imgs/bg-footer-mobile.webp);
+    background-size: 100%;
+    background-position: bottom;
+  }
+
+  footer .container {
+    justify-content: space-around;
+  }
+  .wrapper-footer {
+    gap: 4rem;
+    display: flex;
+    flex-direction: column;
+  }
+  #menu-footer ul {
+    flex-direction: column;
+  }
+  .box-logo-footer {
+    align-items: center;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -165,6 +250,11 @@
   .feature-description {
     padding-top: 12rem;
   }
+  /* -- s-hero-about -- */
+  .s-hero-about {
+    background-position-x: -10rem;
+  }
+  /* -- s-hero-faq -- */
 }
 
 @media screen and (max-width: 560px) {
@@ -231,13 +321,47 @@
   }
   #slider-vertical {
     top: 22rem;
-    left: 3.2rem;
+    left: 1.2rem;
   }
   .info-block,
   .info-block h5,
   .info-block p {
     width: 100%;
     font-size: var(--font-size-mobile-24);
+  }
+  /* -- s-hero-about -- */
+  .s-hero-about {
+    background-image: none;
+  }
+
+  .s-hero-about .container {
+    padding: 12rem 3.2rem 4rem;
+  }
+
+  .wrapper-segmented {
+    left: 3.2rem;
+    width: 80%;
+  }
+  /* -- s-hero-faq -- */
+
+  .s-hero-faq .container {
+    padding: 3.2rem;
+    padding-bottom: 10rem;
+  }
+  .wrapper-image-otdr {
+    height: 558px;
+  }
+
+  .content-text-Otdr {
+    top: 4.3rem;
+  }
+
+  /* -- Footer -- */
+  footer {
+    height: 599px;
+    background: var(--black) url(../imgs/bg-footer-mobile.webp);
+    background-size: 100%;
+    background-position: bottom;
   }
 }
 
@@ -274,6 +398,19 @@
   .position-middle {
     padding: 12rem 0 12rem;
   }
+  /* -- s-hero-about -- */
+  .s-hero-about .container {
+    padding-top: 10rem;
+  }
+  /* -- s-hero-faq -- */
+  .wrapper-image-otdr {
+    height: 458px;
+  }
+  /* -- Footer -- */
+
+  footer .container {
+    justify-content: space-between;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -283,5 +420,29 @@
 
   .info-block p {
     font-size: var(--font-size-mobile-20);
+  }
+  /* -- s-hero-about -- */
+
+  .wrapper-segmented {
+    bottom: 10rem;
+  }
+  /* -- s-hero-faq -- */
+  .s-hero-faq .container {
+    padding-bottom: 20rem;
+  }
+  .wrapper-image-otdr {
+    height: 358px;
+  }
+  .content-text-Otdr {
+    left: 3.4rem;
+    top: 2.3rem;
+  }
+  .content-text-Otdr h3 {
+    font-size: 2.4rem;
+  }
+
+  /* -- Footer -- */
+  footer {
+    background-repeat: no-repeat;
   }
 }
