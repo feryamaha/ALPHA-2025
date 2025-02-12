@@ -3,7 +3,7 @@
   border-bottom: 1px solid var(--neutral-100);
 }
 .s-hero-suporte .container {
-  padding: 8px 80px;
+  padding: 0.8rem 8rem;
 }
 .wrapper-suporte {
   justify-content: flex-start;
@@ -18,23 +18,17 @@ header {
   height: 6.4rem;
 }
 header .container {
-  padding: 16px 80px;
+  padding: 1.6rem 8rem;
 }
 nav ul {
-  gap: 32px;
+  gap: 3.2rem;
 }
 /* -- s-hero-home -- */
 .s-hero-home {
-  height: 686px;
+  height: 68.6rem;
   background: url(../imgs/bg-s-home.webp) center/cover;
 }
-/* .s-hero-home .container {
-  padding: 64px 80px 23px;
-} */
 
-/* .s-hero-home .container {
-  padding: calc(2vw + 1rem) calc(4vw + 1rem) calc(1vw + 1rem);
-} */
 .s-hero-home .container {
   min-height: 100%;
   justify-content: space-between;
@@ -44,47 +38,47 @@ nav ul {
 .wrapper-text-home {
   display: inline-flex;
   justify-content: center;
-  width: 601px;
+  width: 60.1rem;
 }
 .wrapper-text-home p {
-  width: 471px;
+  width: 47.1rem;
   padding: 1.6rem 0 4.2rem;
 }
 .wrapper-branding {
   display: inline-flex;
   justify-content: center;
-  gap: 20px;
+  gap: 2rem;
   margin-top: 11rem;
   overflow-x: hidden;
   align-self: stretch;
   white-space: nowrap;
 }
 .branding-content {
-  gap: 40px;
+  gap: 4rem;
   min-width: 100vh;
   white-space: nowrap;
   overflow: hidden;
 }
 .branding img {
   width: auto;
-  max-width: 120px;
+  max-width: 12rem;
   filter: opacity(0.55);
   flex-shrink: 0;
 }
 /* -- s-hero-mission -- */
 .s-hero-mission {
   overflow-y: auto;
-  height: 800px;
+  height: 80rem;
   max-width: 100%;
   background: var(--Azul-25, #f3f4f6) url(../imgs/bg-s-mission.webp) left
     bottom/100% no-repeat;
 }
 .s-hero-mission .container {
-  padding: 120px 80px 69px;
+  padding: 12rem 8rem 6.9rem;
   position: relative;
 }
 .wrapper-text-info {
-  width: 657px;
+  width: 65.7rem;
   max-width: 100%;
 }
 
@@ -93,66 +87,69 @@ nav ul {
   color: var(--Neutrals-700);
 }
 .wrapper-text-info p {
-  width: 425px;
+  width: 42.5rem;
   padding: 1.6rem 0 3.2rem;
 }
 .box-content-info {
   position: absolute;
-  left: 472px;
-  top: 550px;
-  width: 285px;
+  left: 49.2rem;
+  top: 55rem;
+  width: 28.5rem;
 }
 .title-description {
   color: var(--neutral-500);
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 1.4rem;
   padding-bottom: 4rem;
 }
 .text-description {
   color: var(--Neutrals-900);
-  font-size: 20px;
+  font-size: 2rem;
   line-height: 140%;
 }
 .box-machine {
   position: absolute;
-  right: 80px;
+  right: 8rem;
   top: 12rem;
-  width: 448px;
-  height: 591px;
+  width: 44.8rem;
+  height: 59.1rem;
   border-radius: 3.2rem;
 }
 /* -- s-hero-services -- */
 .s-hero-services .container {
   position: relative;
-  padding: 110px 205px 80px 80px;
+  padding: 11rem 20.5rem 8rem 8rem;
   padding: 8rem;
   background: url(../imgs/bg-s-service.webp) center/cover no-repeat;
 }
 
-#vetor-sinous-services {
+.vetor-sinuous {
   position: absolute;
-  top: 0;
+  height: 35.4rem;
+  width: 39.6rem;
+  top: -25rem;
+  background-image: url(../imgs/sinuous-line.svg);
 }
 
 #slider-vertical {
   position: absolute;
-  left: 60px;
+  left: 6rem;
 }
 .s-hero-services .wrapper-text-info {
-  width: 1155px;
+  width: 115.5rem;
   max-width: 100%;
-  padding-left: 20px;
+  padding-left: 2rem;
 }
 .wrapper-text-info h2 span {
   color: var(--vermelho-500);
 }
 
 .feature-description {
-  width: 430px;
-  padding: 190px 0 0 33px;
+  width: 43rem;
+  padding: 19rem 0 0 3.3rem;
 }
 .info-block h5 {
-  padding-bottom: 8px;
+  padding-bottom: 0.8rem;
   color: var(--neutral-500);
 }
 .info-block p {
@@ -163,22 +160,22 @@ nav ul {
   line-height: 130%;
 }
 .position-top {
-  width: 429px;
+  width: 42.9rem;
 }
 
 .position-middle {
-  width: 360px;
-  padding: 72.5px 0 108.5px;
+  width: 36rem;
+  padding: 7.25rem 0 10.85rem;
 }
 
 /* -- s-hero-about -- */
 .s-hero-about {
-  height: 864px;
+  height: 86.4rem;
   background: url(../imgs/bg-s-about.webp) center/cover no-repeat;
 }
 .s-hero-about .container {
   position: relative;
-  padding: 26px 80px 14px;
+  padding: 2.6rem 8rem 1.4rem;
 }
 
 .wrapper-content-slider {
@@ -190,37 +187,32 @@ nav ul {
 }
 
 .wrapper-service-list {
-  gap: 12px;
+  gap: 1.2rem;
   padding-bottom: 3.2rem;
 }
 
 .wrapper-content-slider p {
   color: var(--neutral-500);
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 500;
   line-height: 150%;
 }
 .s-hero-about .wrapper-text-info {
-  width: 411px;
+  width: 41.1rem;
 }
-
-.s-hero-about .wrapper-text-info {
-  width: 411px;
-}
-
 #select-option-slider {
   position: absolute;
   z-index: -1;
-  top: -40px;
-  left: -52px;
+  top: -4rem;
+  left: -5.2rem;
 }
 
 .wrapper-segmented {
   z-index: 1;
   position: absolute;
-  right: 108px;
-  bottom: 210px;
-  width: 586px;
+  right: 10.8rem;
+  bottom: 21rem;
+  width: 58.6rem;
 }
 .qualified-pros p,
 .tech-lab p,
@@ -233,12 +225,12 @@ nav ul {
 /* -- s-hero-faq -- */
 
 .s-hero-faq .container {
-  padding: 0 80px 120px;
+  padding: 0 8rem 12rem;
   gap: 13rem;
 }
 .wrapper-image-otdr {
   position: relative;
-  height: 262px;
+  height: 26.2rem;
   min-height: max-content;
   background-image: url(../imgs/image-OTDR.webp);
   background-size: 100%;
@@ -248,7 +240,7 @@ nav ul {
 .content-text-Otdr {
   padding-top: 0;
   position: absolute;
-  width: 550px;
+  width: 55rem;
   left: 6.4rem;
   top: 7.3rem;
 }
@@ -260,14 +252,14 @@ nav ul {
   font-size: 3.2rem;
 }
 .wrapper-faq h2 {
-  width: 255px;
+  width: 25.5rem;
 }
 .wrapper-faq h5 {
   padding-bottom: 2rem;
 }
 .p-text-question {
   color: var(--neutral-500);
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 500;
   padding-bottom: 0.4rem;
 }
@@ -278,12 +270,12 @@ nav ul {
   height: 29.1rem;
 }
 .row-questions {
-  width: 908px;
-  border-bottom: 1px solid var(--neutral-100);
+  width: 90.8rem;
+  border-bottom: 0.1rem solid var(--neutral-100);
   padding: 16px 0;
 }
 .row-questions p {
-  width: 693px;
+  width: 69.3rem;
   color: var(--Neutrals-900);
   font-weight: 500;
 }
@@ -292,27 +284,25 @@ nav ul {
 }
 /* -- Footer -- */
 footer {
-  height: 261px;
+  height: 26.1rem;
   background: var(--black) url(../imgs/bg-footer.webp) center/cover no-repeat;
 }
 footer .container {
-  padding: 43px 80px 12px;
+  padding: 4.3rem 8rem 1.2rem;
   text-align: center;
-  align-items: center;
 }
-
 .box-logo-footer {
   height: 7.4rem;
   width: 10.2rem;
 }
 .social-footer {
-  width: 58px;
-  height: 24px;
+  width: 5.8rem;
+  height: 2.4rem;
 }
 footer a,
 footer p {
   color: var(--white);
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 500;
 }
 .copyright,
