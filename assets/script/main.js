@@ -1,23 +1,18 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const menuToggle = document.getElementById('menu-toggle');
-    const navMenu = document.querySelector('.nav-menu');
+// Seleciona os elementos
+const menuToggle = document.getElementById('menu-toggle');
+const menuHeader = document.getElementById('menu-header');
+const btnPrimary = document.getElementById('bt-primary');
 
-    // Adiciona ou remove a classe 'active' ao menu de navegação ao clicar no toggle
-    menuToggle.addEventListener('click', function () {
-        navMenu.classList.toggle('active');
-    });
+// Adiciona evento de clique no botão de toggle
+menuToggle.addEventListener('click', () => {
+    // Alterna a classe 'active' no menu de navegação
+    menuHeader.classList.toggle('active');
 
-    // Adiciona evento de redimensionamento para garantir que, em telas maiores que 1024px, o menu não seja ativo
-    window.addEventListener('resize', function () {
-        if (window.innerWidth > 1024) {
-            navMenu.classList.remove('active');
-        }
-    });
+    // Alterna a classe 'active' no botão "Solicitar orçamento"
+    btnPrimary.classList.toggle('active');
 
-    // Verifica se a largura atual é menor ou igual a 1024px ao carregar a página
-    if (window.innerWidth <= 1024) {
-        navMenu.classList.remove('active'); // Garante que o menu comece fechado em modo mobile
-    }
+    // Alterna a classe 'active' no botão de toggle (para mudar o ícone, se necessário)
+    menuToggle.classList.toggle('active');
 });
 
 ///////////////////////  SCROLLER ////////////////////////////////
