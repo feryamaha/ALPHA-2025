@@ -247,11 +247,11 @@
   /* -- s-hero-home -- */
   .s-hero-home {
     overflow: hidden;
-    height: 81.2rem;
+    height: 98.2rem;
     background-image: url(../imgs/bg-s-home-mobile.webp);
+    background-position: bottom;
   }
   .s-hero-home .container {
-    min-height: 100%;
     width: 100%;
     max-width: 100%;
     padding: 3.2rem 1.6rem;
@@ -348,11 +348,11 @@
 @media screen and (max-width: 480px) {
   /* -- s-hero-home -- */
   .s-hero-home {
-    height: max-content;
-    height: 82.6rem;
+    border: solid blue 0.1rem;
+    
   }
   .s-hero-mission .container {
-    padding-top: 36rem;
+    padding-top: 32rem;
   }
   .wrapper-text-home p,
   .wrapper-text-info p {
