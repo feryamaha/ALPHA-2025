@@ -240,6 +240,7 @@
     flex-direction: column;
   }
   #menu-footer ul {
+    margin: 0 auto;
     flex-direction: column;
   }
   .box-logo-footer {
