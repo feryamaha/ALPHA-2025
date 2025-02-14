@@ -51,15 +51,15 @@
     <!-- /* -- s-hero-header-- */ -->
     <header>
       <div class="container">
-        <a href="#" class="logo">
+        <a href="#INICIO" class="logo">
           <img src="./assets/imgs/logo-alpha.svg" alt="Logo Alpha" />
         </a>
         <nav id="nav-menu" class="nav-menu">
           <ul class="menu">
-            <li><a href="#">Sobre nós</a></li>
-            <li><a href="#">Por que a Alpha?</a></li>
-            <li><a href="#">Nossos serviços</a></li>
-            <li><a href="#">Perguntas frequentes</a></li>
+            <li><a href="#ABOUT">Sobre nós</a></li>
+            <li><a href="#WHY">Por que a Alpha?</a></li>
+            <li><a href="#SERVICES">Nossos serviços</a></li>
+            <li><a href="#QUESTIONS">Perguntas frequentes</a></li>
           </ul>
         </nav>
         <button id="bt-primary" class="btn-primary">Solicitar orçamento</button>
@@ -69,7 +69,7 @@
       </div>
     </header>
     <!-- /* -- s-hero-home-- */ -->
-    <section class="s-hero-home">
+    <section class="s-hero-home" id="INICIO">
       <div class="container">
         <div class="wrapper-text-home">
           <h1>
@@ -116,7 +116,7 @@
       </div>
     </section>
     <!-- /* -- s-hero-mission-- */ -->
-    <section class="s-hero-mission">
+    <section class="s-hero-mission" id="WHY">
       <div class="container">
         <div class="wrapper-text-info">
           <h2>
@@ -149,7 +149,7 @@
       </div>
     </section>
     <!-- /* -- s-hero-services -- */ -->
-    <section class="s-hero-services">
+    <section class="s-hero-services" id="SERVICES">
       <div class="container">
         <div class="image-fiber">
           <div class="vetor-sinuous"></div>
@@ -189,7 +189,7 @@
       </div>
     </section>
     <!-- /* -- s-hero-about-- */ -->
-    <section class="s-hero-about">
+    <section class="s-hero-about" id="ABOUT">
       <div class="container">
         <div class="wrapper-text-info">
           <h2>
@@ -243,7 +243,7 @@
       </div>
     </section>
     <!-- /* -- s-hero-faq-- */ -->
-    <section class="s-hero-faq">
+    <section class="s-hero-faq" id="QUESTIONS">
       <div class="container">
         <div class="wrapper-image-otdr">
           <div class="wrapper-content-slider content-text-Otdr">
@@ -313,14 +313,22 @@
       <div class="container">
         <div class="wrapper-footer">
           <div class="box-logo-footer">
-            <img
-              id="logo-alpha"
-              src="./assets/imgs/log-alpha-footer.svg"
-              alt="logo Alpha"
-            />
+            <a href="#INICIO">
+              <img
+                id="logo-alpha"
+                src="./assets/imgs/log-alpha-footer.svg"
+                alt="logo Alpha"
+            /></a>
             <div class="social-footer">
-              <img src="./assets/imgs/icon-facebook.svg" alt="icon facebook" />
-              <img src="./assets/imgs/icon-linkedin.svg" alt="icon linkedin" />
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+                <img
+                  src="./assets/imgs/icon-facebook.svg"
+                  alt="icon facebook"
+                />
+              </a>
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/imgs/icon-linkedin.svg" alt="icon linkedin"
+              /></a>
             </div>
           </div>
           <nav id="menu-footer" class="nav-menu">
@@ -334,7 +342,13 @@
           <p>CNPJ: 32.994.579/0001-41</p>
         </div>
         <p class="copyright">© Alpha - 2024. Todos os direitos reservados.</p>
-        <p class="credits"><span> Feito por:</span> Auclan Design</p>
+        <a
+          href="https://auclandesign.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <p class="credits"><span> Feito por:</span> Auclan Design</p>
+        </a>
       </div>
     </footer>
   </body>
