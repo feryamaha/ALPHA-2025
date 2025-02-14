@@ -15,14 +15,20 @@
 
 /* -- Header -- */
 header {
+  background-color: #fff;
   height: 6.4rem;
 }
+
+/* header {
+  position: fixed;
+} */
 header .container {
   padding: 1.6rem 8rem;
 }
 nav ul {
   gap: 3.2rem;
 }
+
 /* -- s-hero-home -- */
 .s-hero-home {
   height: 68.6rem;
@@ -148,6 +154,21 @@ nav ul {
   width: 43rem;
   padding: 19rem 0 0 3.3rem;
 }
+
+/* automação slider */
+
+.s-hero-services .info-block {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.s-hero-services .info-block.reveal {
+  opacity: 1;
+}
+
+#slider-vertical {
+  transition: opacity 0.3s ease-in-out;
+}
+/* automação slider */
 .info-block h5 {
   padding-bottom: 0.8rem;
   color: var(--neutral-500);

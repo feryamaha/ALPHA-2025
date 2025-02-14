@@ -117,7 +117,8 @@ button,
 .credits,
 #wrapper-bt-secondary,
 .row-questions,
-.row-questions img {
+.row-questions img,
+#menu-toggle {
   cursor: pointer;
   transition: transform 0.7s ease, opacity 0.7s ease;
 }
@@ -190,6 +191,7 @@ footer .container {
 header,
 header .container,
 nav ul,
+.nav-menu,
 .s-hero-home .container,
 .branding-content,
 .feature-description,
@@ -255,6 +257,7 @@ footer .container,
 /* -- Flexbox: Justify-content Space-between -- */
 header,
 header .container,
+.nav-menu,
 .s-hero-home,
 .button-group,
 .s-hero-faq .container,

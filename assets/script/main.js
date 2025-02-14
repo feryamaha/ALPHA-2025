@@ -1,22 +1,33 @@
-// Seleciona os elementos
-const menuToggle = document.getElementById('menu-toggle');
-const menuHeader = document.getElementById('menu-header');
-const btnPrimary = document.getElementById('bt-primary');
+document.addEventListener('DOMContentLoaded', function () {
+    const menuToggle = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    const btnPrimary = document.getElementById('bt-primary');
+    const headerContainer = document.querySelector('header .container'); // Para devolver o botão
 
-// Adiciona evento de clique no botão de toggle
-menuToggle.addEventListener('click', () => {
-    // Alterna a classe 'active' no menu de navegação
-    menuHeader.classList.toggle('active');
+    menuToggle.addEventListener('click', function () {
+        const target = document.getElementById(this.getAttribute('data-toggle-target'));
+        target.classList.toggle('show');
 
-    // Alterna a classe 'active' no botão "Solicitar orçamento"
-    btnPrimary.classList.toggle('active');
+        if (navMenu.classList.contains('show')) {
+            // Mover o botão para dentro do menu quando o menu está aberto
+            navMenu.appendChild(btnPrimary);
+        } else {
+            // Devolver o botão para o container do header quando o menu é fechado
+            headerContainer.appendChild(btnPrimary);
+        }
+    });
 
-    // Alterna a classe 'active' no botão de toggle (para mudar o ícone, se necessário)
-    menuToggle.classList.toggle('active');
+    document.addEventListener('click', function (event) {
+        const isClickInside = menuToggle.contains(event.target) || navMenu.contains(event.target) || btnPrimary.contains(event.target);
+        if (!isClickInside && navMenu.classList.contains('show')) {
+            navMenu.classList.remove('show');
+            // Devolver o botão para o container do header quando o menu é fechado
+            headerContainer.appendChild(btnPrimary);
+        }
+    });
 });
 
 ///////////////////////  SCROLLER ////////////////////////////////
-
 
 document.addEventListener('DOMContentLoaded', function () {
     // Seleciona o container onde o scroll irá acontecer
@@ -58,6 +69,59 @@ document.addEventListener('DOMContentLoaded', function () {
     scrollContinuously();
 });
 
+/////////////////////////////////////////
 
+document.addEventListener('DOMContentLoaded', function () {
+    const section = document.querySelector('.s-hero-services');
+    const infoBlocks = document.querySelectorAll('.info-block');
+    const sliderImg = document.getElementById('slider-vertical');
+    const viewportHeight = window.innerHeight;
 
+    // Função para checar a posição do scroll
+    function checkScroll() {
+        const scrollPosition = window.scrollY;
+        const sectionTop = section.offsetTop;
+        const sectionBottom = sectionTop + section.offsetHeight;
 
+        let currentIndex = -1; // Começa com -1 para indicar que nenhum bloco foi revelado ainda
+
+        infoBlocks.forEach((block, index) => {
+            const blockTop = block.offsetTop + sectionTop;
+            const blockBottom = blockTop + block.offsetHeight;
+            const blockCenter = blockTop + (block.offsetHeight / 2); // Centro do bloco
+
+            // Verifica se o centro do bloco está acima do meio da viewport
+            if (blockCenter > scrollPosition && blockCenter < (scrollPosition + (viewportHeight / 2))) {
+                currentIndex = index;
+            }
+        });
+
+        // Atualiza a visibilidade dos blocos baseado no índice atual
+        infoBlocks.forEach((block, index) => {
+            if (index <= currentIndex) {
+                block.classList.add('reveal');
+            } else {
+                block.classList.remove('reveal');
+            }
+        });
+
+        // Atualiza a imagem do slider
+        updateSliderImage(currentIndex);
+    }
+
+    // Função para atualizar a imagem do slider
+    function updateSliderImage(index) {
+        // Se nenhum bloco foi revelado, usa a imagem inicial
+        if (index === -1) {
+            sliderImg.src = './assets/imgs/slider-services-step-0.svg';
+        } else {
+            sliderImg.src = `./assets/imgs/slider-services-step-${index + 1}.svg`;
+        }
+    }
+
+    // Adicionar listener de scroll
+    window.addEventListener('scroll', checkScroll);
+
+    // Chamada inicial para garantir que a função seja executada uma vez ao carregar a página
+    checkScroll();
+});

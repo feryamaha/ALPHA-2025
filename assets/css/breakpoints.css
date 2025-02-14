@@ -76,10 +76,40 @@
 @media screen and (max-width: 1024px) {
   /* -- s-hero-suporte & Header -- */
   .s-hero-suporte,
-  #menu-header,
+  #nav-menu,
   #bt-primary {
     display: none;
   }
+  /* header menu responsivo */
+  #nav-menu.show {
+    display: block;
+    position: absolute;
+    top: 6.4rem;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+    max-height: calc(100vh - 6.4rem);
+    overflow-y: auto;
+  }
+
+  #nav-menu.show ul {
+    flex-direction: column;
+    align-items: flex-start;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  #nav-menu.show ul li {
+    margin-bottom: 0.8rem;
+  }
+  #nav-menu.show .btn-primary {
+    display: block;
+    width: auto;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+
   /* -- s-hero-home -- */
   .s-hero-home {
     min-height: 100%;
@@ -175,9 +205,6 @@
     width: 50%;
   }
   /* -- s-hero-faq -- */
-  /*   .s-hero-faq {
-    min-height: max-content;
-  } */
   .wrapper-content-suport {
     gap: 4.4rem;
   }
@@ -347,10 +374,6 @@
 }
 @media screen and (max-width: 480px) {
   /* -- s-hero-home -- */
-  .s-hero-home {
-    border: solid blue 0.1rem;
-    
-  }
   .s-hero-mission .container {
     padding-top: 32rem;
   }
@@ -423,6 +446,17 @@
   }
   /* -- Footer -- */
   footer {
+    height: calc(100% + 3.2rem);
     background-repeat: no-repeat;
+  }
+
+  footer .container {
+    height: 100%;
+    padding: 1.6rem 3.2rem;
+    justify-content: space-between;
+  }
+
+  .wrapper-footer {
+    gap: 2rem;
   }
 }
