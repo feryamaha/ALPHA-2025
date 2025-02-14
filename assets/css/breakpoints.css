@@ -384,17 +384,6 @@
   /* -- s-hero-services -- */
   .feature-description {
     padding-top: 10rem;
-    border: solid blue 0.1rem;
-  }
-  .position-top {
-    border: solid green 0.1rem;
-  }
-  .position-middle {
-    border: solid red 0.1rem;
-  }
-
-  .position-bottom {
-    border: solid yellow 0.1rem;
   }
 }
 @media screen and (max-width: 480px) {
