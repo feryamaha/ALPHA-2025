@@ -383,7 +383,7 @@
 @media screen and (min-width: 481px) and (max-width: 560px) {
   /* -- s-hero-services -- */
   .feature-description {
-    padding-top: 8rem;
+    padding-top: 10rem;
     border: solid blue 0.1rem;
   }
   .position-top {
