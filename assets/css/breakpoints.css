@@ -1,5 +1,4 @@
 :root {
-  /* Font sizes for mobile */
   --font-size-mobile-34: 3.4rem;
   --font-size-mobile-32: 3.2rem;
   --font-size-mobile-28: 2.8rem;
@@ -9,78 +8,60 @@
   --font-size-mobile-16: 1.6rem;
   --font-size-mobile-14: 1.4rem;
 }
-@media screen and (min-width: 1441px) and (max-width: 1920px) {
-  /* -- s-hero-home -- */
+@media screen and(min-width:1441px) and(max-width:1920px) {
   .wrapper-text-home {
     display: inline-flex;
     justify-content: center;
     width: 55%;
   }
-  /* -- s-hero-mission -- */
-  .s-hero-mission .container {
+  .s-hero-mission.container {
     padding: 8rem;
   }
-  /* -- s-hero-about -- */
   .s-hero-about {
     background-size: 80%;
   }
-  /* -- s-hero-faq -- */
 }
-
-@media screen and (min-width: 1200px) and (max-width: 1280px) {
-  /* -- s-hero-mission -- */
+@media screen and(min-width:1200px) and(max-width:1280px) {
   .box-machine {
     width: 34.4rem;
     height: 48.8rem;
     top: 28rem;
   }
-
   .wrapper-text-info {
     width: 100%;
   }
-  /* -- s-hero-faq -- */
   .row-questions {
     width: 90%;
   }
 }
-
-@media screen and (min-width: 1025px) and (max-width: 1199px) {
-  /* -- s-hero-mission -- */
+@media screen and(min-width:1025px) and(max-width:1199px) {
   .box-machine {
     width: 32.4rem;
   }
   .s-hero-mission {
     background-position-x: -4rem;
   }
-  /* -- s-hero-services -- */
-
   .feature-description {
     padding-top: 1.3rem;
   }
-
-  /* -- s-hero-about -- */
   .wrapper-segmented {
     right: 2rem;
   }
-  /* -- s-hero-faq -- */
   .row-questions {
     width: 90%;
   }
 }
-@media screen and (min-width: 1025px) {
+@media screen and(min-width:1025px) {
   #menu-toggle {
     display: none;
   }
 }
-
-@media screen and (max-width: 1024px) {
-  /* -- s-hero-suporte & Header -- */
+@media screen and(max-width:1024px) {
   .s-hero-suporte,
   #nav-menu,
   #bt-primary {
     display: none;
   }
-  /* header menu responsivo */
   #nav-menu.show {
     display: block;
     position: absolute;
@@ -89,33 +70,32 @@
     width: 100%;
     background-color: #fff;
     z-index: 1000;
-    max-height: calc(100vh - 6.4rem);
+    max-height: calc(100vh-6.4rem);
     overflow-y: auto;
+    border-bottom: solid 1px var(--vermelho-500);
+    box-shadow: rgb(0 0 0 / 0.45) 0px 25px 20px-20px;
   }
-
   #nav-menu.show ul {
     flex-direction: column;
     align-items: flex-start;
     align-items: center;
     padding: 1rem;
   }
-
   #nav-menu.show ul li {
     margin-bottom: 0.8rem;
   }
-  #nav-menu.show .btn-primary {
+  #nav-menu.show.btn-primary {
     display: block;
     width: auto;
     margin: 0 auto;
     margin-bottom: 2rem;
   }
-
-  /* -- s-hero-home -- */
-  .s-hero-home {
-    min-height: 100%;
-    background: url(../imgs/bg-s-home-1024.webp) center / cover no-repeat;
+  header {
+    top: -0.1rem;
   }
-  /* -- s-hero-mission -- */
+  .s-hero-home {
+    padding-top: 64px;
+  }
   .box-machine {
     display: none;
   }
@@ -125,7 +105,7 @@
     background-size: cover;
     background-position: top;
   }
-  .s-hero-mission .container {
+  .s-hero-mission.container {
     height: 100%;
     padding-top: 55rem;
     display: flex;
@@ -136,8 +116,6 @@
   .box-content-info {
     position: static;
   }
-  /* -- s-hero-services -- */
-
   .vetor-sinuous {
     width: 32.3rem;
     background-image: url(../imgs/sinuous-line-slider.svg);
@@ -148,11 +126,9 @@
   .wrapper-text-info h2 span {
     font-size: var(--font-size-mobile-32);
   }
-
   .feature-description {
     padding-top: 22rem;
   }
-  /* -- s-hero-about -- */
   .s-hero-about {
     background-size: 120%;
     background-position-x: -12rem;
@@ -161,8 +137,6 @@
     right: 1rem;
     bottom: 18rem;
   }
-  /* -- s-hero-faq -- */
-
   .wrapper-questions {
     margin-left: 0.8rem;
   }
@@ -173,9 +147,7 @@
     top: 4.3rem;
   }
 }
-
-@media screen and (max-width: 834px) {
-  /* -- s-hero-home -- */
+@media screen and(max-width:834px) {
   .s-hero-home {
     height: 102.4rem;
     background-image: url(../imgs/bg-s-home-834.webp);
@@ -188,23 +160,19 @@
     width: 80%;
     margin: 0 auto;
   }
-  /* -- s-hero-mission -- */
   .s-hero-mission {
     background-size: 95%;
   }
-  .s-hero-mission .container {
+  .s-hero-mission.container {
     padding-top: 39rem;
   }
-  /* -- s-hero-services -- */
   .feature-description {
     padding-top: 18rem;
   }
-  /* -- s-hero-about -- */
   .wrapper-segmented {
     right: 5rem;
     width: 50%;
   }
-  /* -- s-hero-faq -- */
   .wrapper-content-suport {
     gap: 4.4rem;
   }
@@ -218,20 +186,17 @@
     background-image: url(../imgs/image-OTDR-mobile.webp);
     background-size: 100%;
   }
-
   .content-text-Otdr {
     width: 80%;
     top: 12.5rem;
   }
-  /* -- Footer -- */
   footer {
     height: 69.9rem;
     background: url(../imgs/bg-footer-mobile.webp);
     background-size: 100%;
     background-position: bottom;
   }
-
-  footer .container {
+  footer.container {
     justify-content: space-around;
   }
   .wrapper-footer {
@@ -248,38 +213,30 @@
     margin: 0 auto;
   }
 }
-
-@media screen and (max-width: 768px) {
-  /* -- s-hero-home -- */
+@media screen and(max-width:768px) {
   .s-hero-home {
     height: 86.8rem;
     background-image: url(../imgs/bg-s-home-768.webp);
     background-size: cover;
   }
-  /* -- s-hero-services -- */
-  .s-hero-services .container {
+  .s-hero-services.container {
     background: none;
   }
-
   .feature-description {
     padding-top: 12rem;
   }
-  /* -- s-hero-about -- */
   .s-hero-about {
     background-position-x: -10rem;
   }
-  /* -- s-hero-faq -- */
 }
-
-@media screen and (max-width: 560px) {
-  /* -- s-hero-home -- */
+@media screen and(max-width:560px) {
   .s-hero-home {
     overflow: hidden;
     height: 98.2rem;
     background-image: url(../imgs/bg-s-home-mobile.webp);
     background-position: bottom;
   }
-  .s-hero-home .container {
+  .s-hero-home.container {
     width: 100%;
     max-width: 100%;
     padding: 3.2rem 1.6rem;
@@ -287,7 +244,7 @@
   h1,
   h1 span {
     font-size: var(--font-size-mobile-32);
-    font-weight: bold;
+    font-weight: 700;
   }
   h1 span {
     font-size: var(--font-size-mobile-34);
@@ -302,12 +259,11 @@
   .wrapper-branding p {
     white-space: normal;
   }
-  /* -- s-hero-mission -- */
   .s-hero-mission {
     height: 104rem;
     background-image: url(../imgs/bg-s-mission-mobile.webp);
   }
-  .s-hero-mission .container {
+  .s-hero-mission.container {
     padding: 40rem 3.2rem 6rem;
   }
   h2 {
@@ -321,8 +277,7 @@
   #btn-solutions-about {
     font-size: var(--font-size-mobile-16);
   }
-  /* -- s-hero-services -- */
-  .s-hero-services .container {
+  .s-hero-services.container {
     padding: 13rem 3.2rem 3.2rem;
   }
   .feature-description {
@@ -343,21 +298,19 @@
     width: 100%;
     font-size: var(--font-size-mobile-24);
   }
-  /* -- s-hero-about -- */
   .s-hero-about {
     background-image: none;
   }
-  .s-hero-about .container {
+  .s-hero-about.container {
     padding: 12rem 3.2rem 4rem;
   }
   .wrapper-segmented {
     left: 3.2rem;
     width: 80%;
   }
-  /* -- s-hero-faq -- */
-  .s-hero-faq .container {
+  .s-hero-faq.container {
     padding: 3.2rem;
-    padding-bottom: 10rem;
+    padding-bottom: 20rem;
   }
   .wrapper-image-otdr {
     height: 55.8rem;
@@ -365,7 +318,6 @@
   .content-text-Otdr {
     top: 4.3rem;
   }
-  /* -- Footer -- */
   footer {
     height: 59.9rem;
     background: url(../imgs/bg-footer-mobile.webp);
@@ -373,9 +325,8 @@
     background-position: bottom;
   }
 }
-@media screen and (max-width: 480px) {
-  /* -- s-hero-home -- */
-  .s-hero-mission .container {
+@media screen and(max-width:480px) {
+  .s-hero-mission.container {
     padding-top: 32rem;
   }
   .wrapper-text-home p,
@@ -384,7 +335,6 @@
     max-width: 100%;
     white-space: normal;
   }
-  /* -- s-hero-services -- */
   .feature-description {
     width: 100%;
     padding-left: 1rem;
@@ -400,8 +350,7 @@
   .position-middle {
     padding: 12rem 0 12rem;
   }
-  /* -- s-hero-about -- */
-  .s-hero-about .container {
+  .s-hero-about.container {
     padding-top: 10rem;
   }
   .box-button-maintenance {
@@ -410,30 +359,25 @@
   .button-group {
     width: 30rem;
   }
-  /* -- s-hero-faq -- */
   .wrapper-image-otdr {
     height: 45.8rem;
   }
-  /* -- Footer -- */
-  footer .container {
+  footer.container {
     justify-content: space-between;
   }
 }
-
-@media screen and (max-width: 375px) {
+@media screen and(max-width:375px) {
   .feature-description {
     padding-top: 8rem;
   }
   .info-block p {
     font-size: var(--font-size-mobile-20);
   }
-  /* -- s-hero-about -- */
   .wrapper-segmented {
     bottom: 10rem;
   }
-  /* -- s-hero-faq -- */
-  .s-hero-faq .container {
-    padding-bottom: 20rem;
+  .s-hero-faq.container {
+    padding-bottom: 25rem;
   }
   .wrapper-image-otdr {
     height: 35.8rem;
@@ -445,18 +389,15 @@
   .content-text-Otdr h3 {
     font-size: var(--font-size-mobile-24);
   }
-  /* -- Footer -- */
   footer {
-    height: calc(100% + 3.2rem);
+    height: calc(100%+3.2rem);
     background-repeat: no-repeat;
   }
-
-  footer .container {
+  footer.container {
     height: 100%;
     padding: 1.6rem 3.2rem;
     justify-content: space-between;
   }
-
   .wrapper-footer {
     gap: 2rem;
   }

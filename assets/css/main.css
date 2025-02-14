@@ -1,5 +1,9 @@
-/* -- s-hero-suporte -- */
 .s-hero-suporte {
+  width: 100%;
+  position: fixed;
+  z-index: 5;
+  top: -0.1rem;
+  background-color: var(--white);
   border-bottom: 1px solid var(--neutral-100);
 }
 .s-hero-suporte .container {
@@ -12,35 +16,31 @@
 .suporte-content {
   gap: 12px;
 }
-
-/* -- Header -- */
 header {
-  background-color: #fff;
-  height: 6.4rem;
-}
-
-/* header {
   position: fixed;
-} */
+  z-index: 4;
+  top: 40px;
+  height: 6.4rem;
+  background-color: var(--white);
+  border-bottom: solid 1px var(--vermelho-500);
+  box-shadow: rgb(0 0 0 / 0.45) 0 25px 20px -20px;
+}
 header .container {
   padding: 1.6rem 8rem;
 }
 nav ul {
   gap: 3.2rem;
 }
-
-/* -- s-hero-home -- */
 .s-hero-home {
+  padding-top: 104px;
   height: 68.6rem;
   background: url(../imgs/bg-s-home.webp) center/cover;
 }
-
 .s-hero-home .container {
   min-height: 100%;
   justify-content: space-between;
   padding: calc(4.8vw + 1rem) calc(4vw + 1rem) calc(0.7vw + 1rem);
 }
-
 .wrapper-text-home {
   display: inline-flex;
   justify-content: center;
@@ -71,7 +71,6 @@ nav ul {
   filter: opacity(0.55);
   flex-shrink: 0;
 }
-/* -- s-hero-mission -- */
 .s-hero-mission {
   overflow-y: auto;
   height: 80rem;
@@ -87,7 +86,6 @@ nav ul {
   width: 65.7rem;
   max-width: 100%;
 }
-
 .wrapper-text-info h2,
 .wrapper-text-info p {
   color: var(--Neutrals-700);
@@ -121,14 +119,12 @@ nav ul {
   height: 59.1rem;
   border-radius: 3.2rem;
 }
-/* -- s-hero-services -- */
 .s-hero-services .container {
   position: relative;
   padding: 11rem 20.5rem 8rem 8rem;
   padding: 8rem;
   background: url(../imgs/bg-s-service.webp) center/cover no-repeat;
 }
-
 .vetor-sinuous {
   position: absolute;
   height: 35.4rem;
@@ -136,7 +132,6 @@ nav ul {
   top: -25rem;
   background-image: url(../imgs/sinuous-line.svg);
 }
-
 #slider-vertical {
   position: absolute;
   left: 6rem;
@@ -150,13 +145,10 @@ nav ul {
 .wrapper-text-info h2 span {
   color: var(--vermelho-500);
 }
-
 .feature-description {
   width: 43rem;
   padding: 19rem 0 0 3.3rem;
 }
-
-/* automação slider */
 .s-hero-services .info-block {
   opacity: 0;
   transition: opacity 0.8s ease-in-out;
@@ -164,8 +156,6 @@ nav ul {
 .s-hero-services .info-block.reveal {
   opacity: 1;
 }
-
-/* automação slider */
 .info-block h5 {
   padding-bottom: 0.8rem;
   color: var(--neutral-500);
@@ -180,13 +170,10 @@ nav ul {
 .position-top {
   width: 42.9rem;
 }
-
 .position-middle {
   width: 36rem;
   padding: 7.25rem 0 10.85rem;
 }
-
-/* -- s-hero-about -- */
 .s-hero-about {
   height: 86.4rem;
   background: url(../imgs/bg-s-about.webp) center/cover no-repeat;
@@ -195,20 +182,16 @@ nav ul {
   position: relative;
   padding: 2.6rem 8rem 1.4rem;
 }
-
 .wrapper-content-slider {
   padding-top: 3.2rem;
 }
-
 .wrapper-content-slider h2 {
   padding: 0.8rem 0 2.5rem;
 }
-
 .wrapper-service-list {
   gap: 1.2rem;
   padding-bottom: 3.2rem;
 }
-
 .wrapper-content-slider p {
   color: var(--neutral-500);
   font-size: 1.4rem;
@@ -224,7 +207,6 @@ nav ul {
   top: -4rem;
   left: -5.2rem;
 }
-
 .wrapper-segmented {
   z-index: 1;
   position: absolute;
@@ -239,9 +221,6 @@ nav ul {
   font-weight: 500;
   color: var(--neutral-700);
 }
-
-/* -- s-hero-faq -- */
-
 .s-hero-faq .container {
   padding: 0 8rem 12rem;
   gap: 13rem;
@@ -254,7 +233,6 @@ nav ul {
   background-size: 100%;
   background-repeat: no-repeat;
 }
-
 .content-text-Otdr {
   padding-top: 0;
   position: absolute;
@@ -300,7 +278,6 @@ nav ul {
 .row-questions img {
   cursor: pointer;
 }
-/* -- Footer -- */
 footer {
   height: 26.1rem;
   background: var(--black) url(../imgs/bg-footer.webp) center/cover no-repeat;

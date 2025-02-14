@@ -1,3 +1,4 @@
+// --- menu mobile ---  //
 document.addEventListener('DOMContentLoaded', function () {
     const menuToggle = document.getElementById('menu-toggle');
     const navMenu = document.getElementById('nav-menu');
@@ -27,13 +28,10 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-///////////////////////  SCROLLER ////////////////////////////////
-
+// --- scroller branding s-hero-home ---  //
 document.addEventListener('DOMContentLoaded', function () {
-    // Seleciona o container onde o scroll irá acontecer
-    const brandingContent = document.querySelector('.branding-content');
 
-    // Velocidade do scroll, controla quão rápido o conteúdo se move 
+    const brandingContent = document.querySelector('.branding-content');
     const scrollSpeed = 0.5; // Menor valor significa movimento mais lento
     let scrollAmount = 0; // Inicia o scroll no início do conteúdo
 
@@ -69,8 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
     scrollContinuously();
 });
 
-/////////////////////////////////////////
-
+// --- scroller vertifical s-hero-services ---  //
 document.addEventListener('DOMContentLoaded', function () {
     const section = document.querySelector('.s-hero-services');
     const infoBlocks = document.querySelectorAll('.info-block');
