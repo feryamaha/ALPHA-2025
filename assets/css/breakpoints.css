@@ -379,6 +379,24 @@
     background-position: bottom;
   }
 }
+
+@media screen and (min-width: 481px) and (max-width: 560px) {
+  /* -- s-hero-services -- */
+  .feature-description {
+    padding-top: 8rem;
+    border: solid blue 0.1rem;
+  }
+  .position-top {
+    border: solid green 0.1rem;
+  }
+  .position-middle {
+    border: solid red 0.1rem;
+  }
+
+  .position-bottom {
+    border: solid yellow 0.1rem;
+  }
+}
 @media screen and (max-width: 480px) {
   /* -- s-hero-home -- */
   .s-hero-mission .container {
